@@ -118,6 +118,12 @@ public class ThreadTest {
         }
     }
 
+    /**
+     * <result>
+     * Thread-1 begin.
+     * Thread-0 begin.
+     * </result>
+     */
     @Test
     public void testDeadLock() throws InterruptedException {
         //初始化线程1，线程1需要在锁定lock1共享资源的情况下再锁定lock2
